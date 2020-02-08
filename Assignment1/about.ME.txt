@@ -1,1 +1,9 @@
 Hi my name is Xin Xin, I would like to be called Catherine. My major is COMPUTER science.
+my student ID: 013956813 
+my preferred email address: xin.xin@sjsu.edu 
+I am a undergraduate student at sjsu
+I am not a graduating senior student
+I am not taking this class as a repeating class
+I am taking cs149 as well and I've already completed cs46Aand cs46B plus cs146. 
+I'm a trasnferred student from De Anza College, and this is my second semester at SJSU.
+I would like to know more things about how we will use OOP and OOD in the industry if possible. 
