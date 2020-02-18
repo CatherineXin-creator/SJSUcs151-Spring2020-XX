@@ -1,0 +1,12 @@
+This is ex#2:
+List main differences between primitive data type int and class Integer. 
+Be as specific as possible. What are advantages of using each one? 
+List all specific functionalities that are available when using one and not the other. 
+Consult Java API as a resource to find out this information. Save your answer to a text file named exercise2.txt.
+
+Answer: 
+1.int is the primitive data type of Java, and Integer is the wrapper class that Java provides for ints. 
+2.The default value for int is 0, and we often use int type when there are more operations on addition, subtraction, multiplication, division and comparison. 
+The default value for an Integer is null, which distinguishes between unassigned and zero value. 
+3.The benefit of encapsulating the basic data type as an object is that more functional methods can be defined within the object to manipulate the data, and an Integer provides multiple operations associated with integers, such as converting a string to an Integer.
+ints, on the other hand, are base data types, which store values directly, and access base types is faster.
