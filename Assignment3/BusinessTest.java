@@ -3,6 +3,9 @@ package Assignment3;
 public class BusinessTest {
     public static void main(String[] args) {
 
+        Address shippingAddress = new Address();
+        shippingAddress.setAddress("658 Apple Dr, San Jose, CA, 95098");
+
         Executive executive = new Executive();
         executive.setFirstName("Kc");
         executive.setLastName("Wang");
@@ -79,8 +82,7 @@ public class BusinessTest {
         customer.setCustomerId("520");
         customer.setPaymentMethod("Cash");
         customer.introduction();
-        Address address = new Address("658 Apple Dr", "San Jose", "CA", "95098");
-        address.printAddress();
+        shippingAddress.printAddress();
 
 
     }
