@@ -1,20 +1,20 @@
 package Assignment3;
 
 public class Person {
-    String firstName;
-    String lastName;
-    int age;
-    String ssn;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String ssn;
 
-    Person() {
-
-    }
 
     Person(String firstName, String lastName, int age, String ssn) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.ssn = ssn;
+    }
+
+    public Person() {
     }
 
     public String getFirstName() {
