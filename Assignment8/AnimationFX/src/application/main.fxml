@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Sphere?>
+
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Animation">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Sphere opacity="0.83" radius="80.0" rotate="93.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <rotationAxis>
+            <Point3D y="1.0" z="1.0" />
+         </rotationAxis>
+      </Sphere>
+      <Box blendMode="LIGHTEN" depth="120.0" height="120.0" rotate="118.4" width="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <effect>
+            <Bloom />
+         </effect>
+         <rotationAxis>
+            <Point3D y="1.0" z="1.0" />
+         </rotationAxis>
+      </Box>
+      <Polygon points="-86.5, 68.5, 94.0, 68.5, -6.0, -88.0" rotate="76.0" strokeType="INSIDE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#3c3737" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false">
+               <stops>
+                  <Stop color="#726464a3" />
+                  <Stop color="#686262" offset="0.007662835249042145" />
+                  <Stop color="#686262" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <Cylinder height="150.0" radius="70.0" rotate="84.6" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <rotationAxis>
+            <Point3D y="1.0" z="1.0" />
+         </rotationAxis>
+      </Cylinder>
+      <MenuButton mnemonicParsing="false" text="RotateButton" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="rotate up" />
+          <MenuItem mnemonicParsing="false" text="rotate down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="RotateButton" GridPane.columnIndex="1" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="rotate up" />
+          <MenuItem mnemonicParsing="false" text="rotate down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="RotateButton" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="rotate up" />
+          <MenuItem mnemonicParsing="false" text="rotate down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="RotateButton" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="rotate up" />
+          <MenuItem mnemonicParsing="false" text="rotate down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="ScaleButton" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="size up" />
+          <MenuItem mnemonicParsing="false" text="size down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="ScaleButton" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="size up" />
+          <MenuItem mnemonicParsing="false" text="size down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="ScaleButton" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="size up" />
+          <MenuItem mnemonicParsing="false" text="size down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="ScaleButton" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <items>
+          <MenuItem mnemonicParsing="false" text="size up" />
+          <MenuItem mnemonicParsing="false" text="size down" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="FadeButton" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="fade in" />
+          <MenuItem mnemonicParsing="false" text="fade out" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="FadeButton" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="fade in" />
+          <MenuItem mnemonicParsing="false" text="fade out" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="FadeButton" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="fade in" />
+          <MenuItem mnemonicParsing="false" text="fade out" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="FadeButton" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="fade in" />
+          <MenuItem mnemonicParsing="false" text="fade out" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="SequentialButton" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="ordinal" />
+          <MenuItem mnemonicParsing="false" text="reversive" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="SequentialButton" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="reversive" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="SequentialButton" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="reversive" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="SequentialButton" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+   </children>
+</GridPane>
